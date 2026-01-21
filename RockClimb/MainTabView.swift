@@ -29,7 +29,7 @@ struct MainTabView: View {
                 .padding(.horizontal)
                 .padding(.bottom, 10)
         }
-        .onChange(of: selectedTab) {
+        .onChange(of: selectedTab) { selectedTab in 
             animateTab(selectedTab)
         }
     }
